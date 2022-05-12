@@ -1,0 +1,250 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-left: 20px;
+
+}
+a{
+	text-decoration:none; /* for removing underline*/
+	color: #555;
+
+}
+p{
+	color:#555;
+}
+.container{
+	max-width: 1300px;
+	margin:auto;/*it will be on centre from left and right side*/
+	padding-left: 25px;
+	padding-right: 25px;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-2{
+	flex-basis: 50%; /*beacuise we need 2 columns*/
+	min-width: 300px;
+}
+
+.col-2 img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+
+.col-2 h1{
+   font-size: 40px;
+   line-height: 40px;
+   margin: 	25px 0;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #ff523b;
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+.header{
+	background: radial-gradient(#fff,#cc4141);
+}
+.header .row{
+	margin-top: 70px;
+}
+.btn:hover{
+	background:#563434;
+}
+
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.rating .fa{
+	color: #ff523b;
+}
+
+/*footer*/
+.footer{
+background:#000;
+color: #8a8a8a;
+font size: 60px 0 20px;
+}
+
+.footer p{
+color: #8a8a8a;
+
+}
+
+.footer h3{
+color: #fff;
+margin-bottom: 20px; 
+}
+
+.footer-col-1,.footer-col-2{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+
+.footer-col-1{ /* flex 1: It will use all available space*/
+	text-align: center;
+}
+
+.footer-col-4{
+	flex-basis: 12%;
+	text-align: center;
+}
+.menu-icon{
+	width: 28px;
+	margin-left: 20px;
+	display :none;
+}
+
+
+
+/*---account page----*/
+.account-page{
+	padding:50px 0;
+	background:radial-gradient(#fff,#cc4141);
+}
+
+
+.form-container{
+	background:#fff;
+	width: 300px;
+	height: 400px;
+	position:relative;
+	text-align: center;
+	padding:20px 0; 
+	margin: auto;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+.form-container span{
+	font-weight: bold;
+	padding: 0 10px;
+	color: #555;
+	cursor: pointer;
+	width: 100px;
+	display: inline-block;
+}
+.form-btn{
+	display: inline-block;
+}
+.form-conatiner form{
+	max-width: 300px;
+	padding: 0 20px;
+	position: absolute;
+	top:130px;
+}
+
+form input{
+	width: 100%
+	height:30px;
+	margin: 10px 0;
+	padding: 0 10px;
+	border:1px solid #ccc;
+
+}
+
+
+form .btn{
+	width: 100%;
+	border:none;
+    cursor: pointer;
+    margin :10px 0; 
+}
+form .btn:focus{
+	outline:none; /*no outline*/
+}
+
+#LoginForm{
+	left: -300px;
+
+}
+#RegForm{
+	left:0;
+}
+form a{
+	font-size: 12px;
+
+}
+
+#Indicator{
+	width: 100px;
+	border:none;
+	background:#ff523b;
+	height: 3px;
+	margin-top: 8px;
+	transform: :translateX(100px); 
+	transition: transform 1s;
+}
+
+.forcast{
+	text-align: center;
+}
+.forecasting-page{
+	padding: 100px 100px;
+    text-align: center;
+    background:radial-gradient(#fff,#cc4141);
+    font-size: 20px;
+}
+
+
+/*--media query for menu*/
+@media only screen and (max-width: 800px){
+	nav ul{
+		position: absolute;
+		top:70px;
+		left: 0;
+		background:#333;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+}
+
+nav ul li{
+	display: block;
+	margin-right: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+nav ul li a{
+	color:#fff;
+}
+
+.menu-icon{
+	display: block;
+	cursor:pointer; /*cursor*/
+}
+}
+

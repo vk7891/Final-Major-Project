@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width.initial-scale=1.0">
+	<title>House Price Predition</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+<div class="container">
+<div class="navbar">
+	<div class="logo">
+		<img src="housep.png" width="40px" height="40px">
+	</div>
+
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="housepriceprediction.html">Home</a></li>
+			<li><a href="forecasting.html">Forecasting</a></li>
+			<li><a href="Account.html">Account</a></li>
+		</ul>
+
+	</nav>
+	<img src="menu1.png" class="menu-icon" onclick="menutoggle()">
+</div>
+</div>
+
+<!-----forecasting the prices----->
+<div class="forcast">
+	<h3>Fill out the required details in the below form to get the prices of houses </h3>
+</div>
+
+<div class="forecasting-page">
+					<form action="/result" method="POST">
+                    <label for="Bedrooms">Bedrooms :</label>
+                    <input type="text" id="Bedrooms" name="Bedrooms">
+                    <br>
+
+                      
+                    <label for="Bathrooms">Bathrooms : </label>
+                    <input type="text" id="Bathrooms" name="Bathrooms">
+                    <br>
+
+                    <label for="Sqft_Living">Squarefoot Home :</label>
+                    <input type="text" id="Sqft_Living" name="Sqft_Living">
+                    <br>
+                     
+                    <label for="Sqft_Lot">Squarefoot Lot :</label>
+                    <input type="text" id="Sqft_Lot" name="Sqft_Lot">
+                    <br>
+
+
+                    <label for="Floors">Floors :</label>
+                    <input type="text" id="Floors" name="Floors">
+                    <br>
+
+
+                   
+
+                    <label for="Waterfront"> View Waterfront(0 for NO and 1 for Yes) :</label>
+                    <input type="text" id="Floors" name="Floors">
+                    <br>
+
+
+                    
+
+
+
+                    <label for="View"> Has been viewed :</label>
+                    <input type="text" id="View" name="View">
+                    <br>
+
+
+
+                    <label for="Condition:"> Condition(Rate from 0 to 5) :</label>
+                    <input type="text" id="Condition:" name="Condition:">
+                    <br>
+
+
+
+               
+
+
+                    <label for="Sqft_Above:"> Square footage of house apart from basement :</label>
+                    <input type="text" id="Sqft_Above" name="Sqft_Above">
+                    <br>
+
+
+
+                    <label for="Sqft_Basement"> Square footage of the basement :</label>
+                    <input type="text" id="Sqft_Basement" name="Sqft_Basement">
+                    <br>
+
+
+                    <label for="Yr_Built:"> Built Year :</label>
+                    <input type="text" id="Yr_Built" name="Yr_Built">
+                    <br>
+
+
+                 
+
+
+
+                    <label for="Waterfront"> Year when house was renovated :</label>
+                    <input type="text" id="Yr_Renovated" name="Yr_Renovated">
+                    <br>
+
+
+
+
+
+                    <label for="Lat"> Latitude coordinate :</label>
+                    <input type="text" id="Lat" name="Lat">
+                    <br>
+
+
+
+                    <label for="Long">  Longitude coordinate :</label>
+                    <input type="text" id="Long" name="Long">
+                    <br>
+
+
+                    <label for="Sqft_Living15"> Living room area in 2015 after renovations :</label>
+                    <input type="text" id="Sqft_Living15" name="Sqft_Living15">
+                    <br>
+
+
+                    <label for="Sqft_Lot15"> Lot Size area in 2015 after renovations :</label>
+                    <input type="text" id="Sqft_Lot15" name="Sqft_Lot15">
+                    <br>
+
+                    <input type="submit" name="Submit">
+				</form>
+
+                           
+</div>
+
+
+<!---footer---->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+			<p>Our purpose is to help people who plan to buy a house so they can know the price range in the future, then they can plan their finance well </p>
+		</div>
+		<div class="footer-col-2">
+			<h3>Follow Us</h3>
+			<li>Facebook</li>
+			<li>Twitter</li>
+			<li>Instagram</li>
+		</div>
+		</div>
+		</div>
+	</div>
+<!-------js for togg;le menu------>
+ <script>
+ 	var MenuItems=document.getElementById("MenuItems");
+ 	MenuItems.style.maxHeight="0px";
+ 	function menutoggle(){
+ 		if(MenuItems.style.maxHeight =="0px")
+ 	{
+        MenuItems.style.maxHeight="200px";
+ 	}
+ 	else
+ 	{
+ 		MenuItems.style.maxHeight="0px";
+ 	}
+ }
+ </script>
+
+</body>
+</html>

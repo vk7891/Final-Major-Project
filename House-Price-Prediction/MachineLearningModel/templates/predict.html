@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+</head>
+<body>
+<div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src= "/static/images/housep.png"width="40px" height="40px" />
+        </div>
+
+        <nav>
+          <ul id="MenuItems">
+           
+            <li><a href="../../MachineLearningModel/templates/index.html">Forecasting</a></li>
+           
+          </ul>
+        </nav>
+        <img src="/static/images/menu1.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+
+
+    <div>
+        'Your house estimate price is  ₹ {{prediction}}lakhs'
+    </div>
+
+
+<div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <p>
+              Our purpose is to help people who plan to buy a house so they can
+              know the price range in the future, then they can plan their
+              finance well
+            </p>
+          </div>
+          <div class="footer-col-2">
+            <h3>Follow Us</h3>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------js for togg;le menu------>
+    <script src="../../Frontend/js/HousePriceJS.js"></script> 
+  </body>
+</html>
+
+
+
+</body>
+</html>
